@@ -22,6 +22,9 @@ streets.addTo(map);
 //also, it's not on the main branch
 let airportData = "https://raw.githubusercontent.com/DeliaDavila/Mapping_Earthquakes/Mapping_GeoJSON_Points/majorAirports.json";
 
+//that still did not work
+
+
 // Grabbing our GeoJSON data.
 d3.json(airportData).then(function(data) {
     console.log(data);
