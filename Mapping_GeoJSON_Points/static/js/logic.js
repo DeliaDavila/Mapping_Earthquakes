@@ -13,17 +13,12 @@ attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap
 // add base tile layer to the map
 streets.addTo(map);
 
-// Accessing the airport GeoJSON URL
-// let airportData = "https://raw.githubusercontent.com/<GitHub_name>/Mapping_Earthquakes/main/majorAirports.json";
-
-// //that probably should have had instruction to add GitHub name?
+//unclear which option:
+// 1. major airports on main branch
 // let airportData = "https://raw.githubusercontent.com/DeliaDavila/Mapping_Earthquakes/main/majorAirports.json";
 
-//also, it's not on the main branch
+// 2. major airports on geo json branch
 let airportData = "https://raw.githubusercontent.com/DeliaDavila/Mapping_Earthquakes/Mapping_GeoJSON_Points/majorAirports.json";
-
-//that still did not work
-
 
 // Grabbing our GeoJSON data.
 d3.json(airportData).then(function(data) {
