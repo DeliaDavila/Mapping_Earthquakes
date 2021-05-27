@@ -17,7 +17,10 @@ streets.addTo(map);
 // let airportData = "https://raw.githubusercontent.com/<GitHub_name>/Mapping_Earthquakes/main/majorAirports.json";
 
 // //that probably should have had instruction to add GitHub name?
-let airportData = "https://raw.githubusercontent.com/DeliaDavila/Mapping_Earthquakes/main/majorAirports.json";
+// let airportData = "https://raw.githubusercontent.com/DeliaDavila/Mapping_Earthquakes/main/majorAirports.json";
+
+//also, it's not on the main branch
+let airportData = "https://raw.githubusercontent.com/DeliaDavila/Mapping_Earthquakes/Mapping_GeoJSON_Points/majorAirports.json";
 
 // Grabbing our GeoJSON data.
 d3.json(airportData).then(function(data) {
