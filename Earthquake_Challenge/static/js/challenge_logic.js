@@ -23,12 +23,7 @@ let dark = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?
   accessToken: API_KEY
 });
 
-// Create the map object with center, zoom level and default layer.
-let map = L.map('mapid', {
-	center: [40.7, -94.5],
-	zoom: 3,
-	layers: [dark]
-});
+
 
 // Create a base layer that holds all three maps.
 let baseMaps = {
@@ -42,6 +37,12 @@ let allEarthquakes = new L.LayerGroup();
 let majorEarthquakes = new L.LayerGroup();
 let tectonicPlates = new L.LayerGroup();
 
+// Create the map object with center, zoom level and default layer.
+let map = L.map('mapid', {
+	center: [40.7, -94.5],
+	zoom: 3,
+	layers: [dark, tectonicPlates, allEarthquakes]
+});
 
 // 2. Add a reference to the tectonic plates group to the overlays object.
 let overlays = {
